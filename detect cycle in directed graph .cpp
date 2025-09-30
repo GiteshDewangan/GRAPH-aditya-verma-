@@ -6,9 +6,9 @@ private:
 
         for (auto it : adj[node]) {
             if (!vis[it]) {
-                if (dfsCheck(it, adj, vis, pathVis)) return true;
+                if (dfsCheck(it, adj , vis, pathVis)) return true;
             }
-            else if (pathVis[it]) {
+            else if (PathVis[it]) {
                 return true;
             }
         }
